@@ -1,0 +1,259 @@
+/*University Name: University Kuala Lumpur, Unikl Miit
+    Name: Muhammad Irfan Bin Abu Bakar , id = 52052120009
+          Muhammad Irfan Bin Mohd Noor , id = 52052120007
+    Title of Project: Old v New Games
+    Lecturer Name: Norshahiran Puteh
+    Submission Date: Thusrday Week 17*/
+body{
+	background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(41,41,41,1) 100%);
+}
+/*css for scroll bar*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 45px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: orange;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+h2{
+    color:orange;
+}
+p{
+	color:#fff;
+}
+.container1
+{
+	position: relative;
+	width: 1250px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.container1 .box
+{
+	position: relative;
+	width: 300px;
+	height: 400px;
+	margin: 20px 0;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.container1 .box .imgBx
+{
+	position: absolute;
+	top: 0;
+	left: 20px;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	clip-path: circle(400px at center 100px);
+	transition: 0.5s;
+	transition-delay: 0.5s;
+}
+.container1 .box:hover .imgBx
+{
+	clip-path: circle(80px at center 100px);
+	transition-delay: 0s;
+}
+.container1 .box .imgBx img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.container1 .box .content
+{
+	position: absolute;
+	left: 20px;
+	bottom: 0;
+	width: 100%;
+	height: 55%;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+    
+}
+.container1 .box .content h2
+{
+	margin: 0;
+	padding: 0;
+}
+.container1 .box .content .b1
+{
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+	display: inline-block;
+}
+.container1 .box .content h2,
+.container1 .box .content p,
+.container1 .box .content .b1
+{
+	opacity: 0;
+	transition: 0.5s;
+	transform: translateY(20px);
+}
+.container1 .box:hover .content h2
+{
+	opacity: 1;
+	transform: translateY(0);
+	transition-delay: 0.5s
+}
+.container1 .box:hover .content p
+{
+	opacity: 1;
+	transform: translateY(0);
+	transition-delay: 0.7s
+}
+.container1 .box:hover .content .b1
+{
+	opacity: 1;
+	transform: translateY(0);
+	transition-delay: 0.9s
+}
+
+/*read more*/
+.popup .overlay {
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100vw;
+	height:100vh;
+	background:rgba(0,0,0,0.7);
+	z-index:1;
+	display:none;
+  }
+   
+  .popup .content {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%) scale(0);
+	background:#fff;
+	width:95%;
+	max-width:1000px;
+	margin-left:100px;
+	height:550px;
+	z-index:1;
+	text-align:center;
+	padding:20px;
+	box-sizing:border-box;
+	font-family:"Open Sans",sans-serif;
+  }
+   
+  .popup .close-btn {
+	cursor:pointer;
+	position:absolute;
+	right:20px;
+	top:20px;
+	width:30px;
+	height:30px;
+	background:#222;
+	color:#fff;
+	font-size:25px;
+	font-weight:600;
+	line-height:30px;
+	text-align:center;
+	border-radius:50%;
+  }
+   
+  .popup.active .overlay {
+	display:block;
+  }
+   
+  .popup.active .content {
+	transition:all 300ms ease-in-out;
+	transform:translate(-50%,-50%) scale(1);
+  }
+   
+  .button {
+	position:absolute;
+	top:50%;
+	right:50%;
+	transform:translate(-50%,-50%);
+	padding:15px;
+	font-size:18px;
+	border:2px solid #222;
+	color:#222;
+	text-transform:uppercase;
+	font-weight:600;
+	background:#fff;
+  }
+ 
+  /*read more2*/
+.popup2 .overlay2 {
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100vw;
+	height:100vh;
+	background:rgba(0,0,0,0.7);
+	z-index:1;
+	display:none;
+  }
+   
+  .popup2 .content2 {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%) scale(0);
+	background:#fff;
+	width:95%;
+	max-width:1000px;
+	height:550px;
+	z-index:1;
+	text-align:center;
+	padding:20px;
+	box-sizing:border-box;
+	font-family:"Open Sans",sans-serif;
+  }
+   
+  .popup2 .close-btn2 {
+	cursor:pointer;
+	position:absolute;
+	right:20px;
+	top:20px;
+	width:30px;
+	height:30px;
+	background:#222;
+	color:#fff;
+	font-size:25px;
+	font-weight:600;
+	line-height:30px;
+	text-align:center;
+	border-radius:50%;
+  }
+   
+  .popup2.active .overlay2 {
+	display:block;
+  }
+   
+  .popup2.active .content2 {
+	transition:all 300ms ease-in-out;
+	transform:translate(-50%,-50%) scale(1);
+  }
+   
+  .button2 {
+	position:absolute;
+	top:50%;
+	right:50%;
+	transform:translate(-50%,-50%);
+	padding:15px;
+	font-size:18px;
+	border:2px solid #222;
+	color:#222;
+	text-transform:uppercase;
+	font-weight:600;
+	background:#fff;
+  }
