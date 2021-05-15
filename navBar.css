@@ -89,37 +89,3 @@ header nav ul li ul li{
     cursor:pointer;
     display:none;
 }
-/*@media (max-width:991px){
-    header{
-        padding:0 20px;
-    }
-    .menu-toggle{
-        display:block;
-    }
-    header nav{
-        position: absolute;
-        width:100%;
-        height:calc(100vh - 50px);
-        background:#333;
-        top:50px;
-        left:-100%;
-        transition: 0.5s;
-    }
-    header nav.active{
-        left:0;
-    }
-    header nav ul{
-        display: block;
-        text-align:center;
-    }
-    header nav ul li a{
-        border-bottom: 1px solid rgba(0,0,0,.2);
-    }
-    header nav ul li.active ul{
-        position:relative;
-        background: #003e6f;
-    }
-    header nav ul li ul li{
-        width:100%;
-    }
-}*/
