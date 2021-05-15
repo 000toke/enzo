@@ -164,7 +164,7 @@ body{
 }
 
 /*css for responsive*/
-@media(max-width:1280px){
+/*@media(max-width:1280px){
 	.contact-form input[type="text"] {
 		width: 31.7%;
 	}
@@ -218,5 +218,5 @@ body{
 		margin-bottom: .5em;
 		min-height: 100px;
 	}
-}
+}*/
 /*-- //responsive --*/
