@@ -89,7 +89,7 @@ header nav ul li ul li{
     cursor:pointer;
     display:none;
 }
-@media (max-width:991px){
+/*@media (max-width:991px){
     header{
         padding:0 20px;
     }
@@ -122,4 +122,4 @@ header nav ul li ul li{
     header nav ul li ul li{
         width:100%;
     }
-}
+}*/
