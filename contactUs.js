@@ -4,7 +4,7 @@
     //Title of Project: Old v New Games
     //Lecturer Name: Norshahiran Puteh
     //Submission Date: Thusrday Week 17
-    
+
 //Js data 
 let nameElement = document.querySelector('#name');
 let emailElement = document.querySelector('#email');
